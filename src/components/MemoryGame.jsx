@@ -1,8 +1,17 @@
 import { useState } from 'react'
 import { shuffle } from '../utils.js'
 import initial_flags from '../assets/flags'
+import { useEffect } from 'react'
 
-const start = 3 // The amount of flags to start with, - 1
+// The amount of flags to start with, - 1
+const start = 3
+
+// TODO: Refactor this into the actual flags
+const flagName = flag => flag
+	.split(/[./]/g)
+	.at(-2)
+	.replace(/-/g, ' ')
+	.replace('flag', '')
 
 export default function MemoryGame ({ score, updateScore, goal, handleGameOver }) {
 	const [ memory, setMemory ] = useState([])
@@ -30,7 +39,10 @@ export default function MemoryGame ({ score, updateScore, goal, handleGameOver }
 		<main>
 			{ displayed_flags.map(flag =>
 				<button key={ flag } className='flag' onClick={ () => consumeTurn(flag) }>
-					<img src={ flag } />
+					<figure>
+						<img src={ flag } />
+						<figcaption>{ flagName(flag) }</figcaption>
+					</figure>
 				</button>
 			)}
 		</main>
