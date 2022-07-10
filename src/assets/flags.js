@@ -40,7 +40,6 @@ import malawi from "./flags/malawi.png"
 import malaysia from "./flags/malaysia.png"
 import mauritania from "./flags/mauritania.png"
 import mauritius from "./flags/mauritius.png"
-import monaco from "./flags/monaco.png"
 import mongolia from "./flags/mongolia.png"
 import mozambiqueFlag from "./flags/mozambique-flag.png"
 import myanmar from "./flags/myanmar.png"
@@ -79,4 +78,4 @@ import vietnam from "./flags/vietnam.png"
 import yemen from "./flags/yemen.png"
 import zimbabwe from "./flags/zimbabwe.png"
 
-export default [angola,argentina,azerbaijan,bangladesh,burundi,costaRica,croatia,cuba,cyprus,djibouti,dominicanRepublic,ecuador,elSalvador,eritrea,ethiopia,gambia,greece,guatemala,guineaBissau,guyana,haitiFlag,honduras,hongkongFlag,india,indonesia,iraq,ivoryCoast,jordan,kazakhstan,kenya,kyrgyzstan,laos,lebanon,lesotho,lgbtFlag,libya,luxembourg,madagacar,malawi,malaysia,mauritania,mauritius,monaco,mongolia,mozambiqueFlag,myanmar,namibia,nepal,northKorea,pakistan,panama,peru,puertoRico,qatar,sanMarino,serbia,seychelles,sierraLeone,singapore,somalia,southAfrica,southKorea,southSudan,sriLanka,swaziland,syria,tajikistan,tanzania,thailand,timorLeste,trinidadAndTobago,uganda,unitedArabEmirates,uruguay,ussr,uzbekistan,venezuela,vietnam,yemen,zimbabwe]
+export default [angola,argentina,azerbaijan,bangladesh,burundi,costaRica,croatia,cuba,cyprus,djibouti,dominicanRepublic,ecuador,elSalvador,eritrea,ethiopia,gambia,greece,guatemala,guineaBissau,guyana,haitiFlag,honduras,hongkongFlag,india,indonesia,iraq,ivoryCoast,jordan,kazakhstan,kenya,kyrgyzstan,laos,lebanon,lesotho,lgbtFlag,libya,luxembourg,madagacar,malawi,malaysia,mauritania,mauritius,mongolia,mozambiqueFlag,myanmar,namibia,nepal,northKorea,pakistan,panama,peru,puertoRico,qatar,sanMarino,serbia,seychelles,sierraLeone,singapore,somalia,southAfrica,southKorea,southSudan,sriLanka,swaziland,syria,tajikistan,tanzania,thailand,timorLeste,trinidadAndTobago,uganda,unitedArabEmirates,uruguay,ussr,uzbekistan,venezuela,vietnam,yemen,zimbabwe]
