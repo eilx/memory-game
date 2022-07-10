@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { shuffle } from '../utils.js'
-import initial_flags from "../assets/flags"
+import initial_flags from '../assets/flags'
 
 const start = 3 // The amount of flags to start with, - 1
 
@@ -29,9 +29,9 @@ export default function MemoryGame ({ score, updateScore, goal, handleGameOver }
 	return (
 		<main>
 			{ displayed_flags.map(flag =>
-				<a key={ flag } onClick={ () => consumeTurn(flag) }>
+				<button key={ flag } className='flag' onClick={ () => consumeTurn(flag) }>
 					<img src={ flag } />
-				</a>
+				</button>
 			)}
 		</main>
 	)
