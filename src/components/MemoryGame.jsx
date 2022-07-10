@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { shuffle } from '../utils.js'
 import initial_flags from '../assets/flags'
-import { useEffect } from 'react'
 
 // The amount of flags to start with, - 1
 const start = 3
