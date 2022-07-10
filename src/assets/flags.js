@@ -59,7 +59,6 @@ import sierraLeone from "./flags/sierra-leone.png"
 import singapore from "./flags/singapore.png"
 import somalia from "./flags/somalia.png"
 import southAfrica from "./flags/south-africa.png"
-import southKorea2 from "./flags/south-korea-2.png"
 import southKorea from "./flags/south-korea.png"
 import southSudan from "./flags/south-sudan.png"
 import sriLanka from "./flags/sri-lanka.png"
@@ -80,4 +79,4 @@ import vietnam from "./flags/vietnam.png"
 import yemen from "./flags/yemen.png"
 import zimbabwe from "./flags/zimbabwe.png"
 
-export default [angola,argentina,azerbaijan,bangladesh,burundi,costaRica,croatia,cuba,cyprus,djibouti,dominicanRepublic,ecuador,elSalvador,eritrea,ethiopia,gambia,greece,guatemala,guineaBissau,guyana,haitiFlag,honduras,hongkongFlag,india,indonesia,iraq,ivoryCoast,jordan,kazakhstan,kenya,kyrgyzstan,laos,lebanon,lesotho,lgbtFlag,libya,luxembourg,madagacar,malawi,malaysia,mauritania,mauritius,monaco,mongolia,mozambiqueFlag,myanmar,namibia,nepal,northKorea,pakistan,panama,peru,puertoRico,qatar,sanMarino,serbia,seychelles,sierraLeone,singapore,somalia,southAfrica,southKorea2,southKorea,southSudan,sriLanka,swaziland,syria,tajikistan,tanzania,thailand,timorLeste,trinidadAndTobago,uganda,unitedArabEmirates,uruguay,ussr,uzbekistan,venezuela,vietnam,yemen,zimbabwe]
+export default [angola,argentina,azerbaijan,bangladesh,burundi,costaRica,croatia,cuba,cyprus,djibouti,dominicanRepublic,ecuador,elSalvador,eritrea,ethiopia,gambia,greece,guatemala,guineaBissau,guyana,haitiFlag,honduras,hongkongFlag,india,indonesia,iraq,ivoryCoast,jordan,kazakhstan,kenya,kyrgyzstan,laos,lebanon,lesotho,lgbtFlag,libya,luxembourg,madagacar,malawi,malaysia,mauritania,mauritius,monaco,mongolia,mozambiqueFlag,myanmar,namibia,nepal,northKorea,pakistan,panama,peru,puertoRico,qatar,sanMarino,serbia,seychelles,sierraLeone,singapore,somalia,southAfrica,southKorea,southSudan,sriLanka,swaziland,syria,tajikistan,tanzania,thailand,timorLeste,trinidadAndTobago,uganda,unitedArabEmirates,uruguay,ussr,uzbekistan,venezuela,vietnam,yemen,zimbabwe]
