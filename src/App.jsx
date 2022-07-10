@@ -28,7 +28,7 @@ export default function App() {
 			<h1>Memory Game</h1>
 
 			<div>
-				<h2>High Score: { high_score }</h2>
+				<h2>High Score: { high_score | 0 }</h2>
 				<h3>Current Score: { score }</h3>
 			</div>
 		</header>
@@ -41,7 +41,6 @@ export default function App() {
 		/>
 
 		<footer>
-
 			<a href='https://icons8.com'>Icons by <span>Icons8</span></a>
 		</footer>
 	</>
