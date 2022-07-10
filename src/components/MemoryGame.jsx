@@ -5,22 +5,15 @@ import initial_flags from '../assets/flags'
 // The amount of flags to start with, - 1
 const start = 3
 
-// TODO: Refactor this into the actual flags
-const flagName = flag => flag
-	.split(/[./]/g)
-	.at(-2)
-	.replace(/-/g, ' ')
-	.replace('flag', '')
-
 export default function MemoryGame ({ score, updateScore, goal, handleGameOver }) {
 	const [ memory, setMemory ] = useState([])
 	const [ flags ] = useState(shuffle(initial_flags))
 
 	const displayed_flags = shuffle(flags.slice(0, start + !score + score))
 
-	function consumeTurn (flag) {
+	function consumeTurn (flag_name) {
 		// Game lost
-		if (memory.includes(flag)) {
+		if (memory.includes(flag_name)) {
 			handleGameOver(false)
 		}
 		// Game won
@@ -29,7 +22,7 @@ export default function MemoryGame ({ score, updateScore, goal, handleGameOver }
 		}
 		// Game continues
 		else {
-			setMemory([...memory, flag])
+			setMemory([...memory, flag_name])
 			updateScore()
 		}
 	}
@@ -37,10 +30,12 @@ export default function MemoryGame ({ score, updateScore, goal, handleGameOver }
 	return (
 		<main>
 			{ displayed_flags.map(flag =>
-				<button key={ flag } className='flag' onClick={ () => consumeTurn(flag) }>
+				<button key={ flag.url } className='flag' onClick={ () => consumeTurn(flag.name) }>
 					<figure>
-						<img src={ flag } />
-						<figcaption>{ flagName(flag) }</figcaption>
+						<img src={ flag.url } />
+						<figcaption>
+							{ flag.name.replace(/[a-z](?=[A-Z])/g, x => `${x} `) }
+						</figcaption>
 					</figure>
 				</button>
 			)}

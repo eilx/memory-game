@@ -19,13 +19,14 @@ files
 .forEach(file => {
 	const name = path.parse(file).name
 		.replace(/-([a-z0-9])/g, match => match[1].toUpperCase())
+		.replace(/^[a-z]/, x => x.toUpperCase())
 
 	stream.write(`import ${name} from "./flags/${file}"\n`)
-	imports.push(name)
+	imports.push(`{ name: '${name}', url: ${name} }`)
 })
 
 stream.write(`
-export default [${imports}]
+export default [${imports.join(', ')}]
 `)
 
 stream.end()
